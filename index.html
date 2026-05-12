@@ -3,44 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portifólio</title>
+    <title>Meu Portfólio</title>
     <style>
         /* CSS */
-            body {
-                font-family: Arial, sans-serif;
-                margin: 10px;
-                padding: 20px;
-            }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+        }
+        header {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        .foto-perfil {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 3px solid #eee;
+        }
+        h2 {
+            color: #444;
+        }
     </style>
 </head>
 <body>
-    <!-- HTML -->
     <header>
-        <h1 class ="titulo">Meu portifólio</h1>
-
+        <h1 class="titulo">Meu Portfólio</h1>
         <nav>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#interesses">Interesses</a>
             <a href="#projetos">Projetos</a>
             <a href="#contact">Contato</a>
         </nav>
     </header>
-    <p class = "nome">Meu nome é Jhonata</p>
+
     <main>
-        <section>
+        <section id="sobre">
             <article>
                 <h2>Sobre mim</h2>
-                <p>Conteúdo</p>
+                
+                <img src="https://github.com/jhonatae.png" 
+                     alt="Foto de perfil de Jhonata" 
+                     width="200" 
+                     class="foto-perfil">
+
+                <p class="nome">Meu nome é Jhonata Evangelista.</p>
+                <p>Sou estudante de Ciência da Computação na UFOP e entusiasta em desenvolvimento de software e hardware.</p>
             </article>
+        </section>
+
+        <section id="interesses">
+            <h2>Meus interesses</h2>
+            <ul>
+                <li>Programação (C, C++ e Python)</li>
+                <li>Sistemas Distribuídos</li>
+                <li>Hardware e Manutenção</li>
+                <li>Práticas de Acrobacia e Calistenia</li>
+                <li>Jogos Táticos</li>
+            </ul>
         </section>
     </main>
 
-    
-
-
     <script>
-       //javascript
-
-
-
+        // JavaScript
     </script>
 </body>
 </html>
